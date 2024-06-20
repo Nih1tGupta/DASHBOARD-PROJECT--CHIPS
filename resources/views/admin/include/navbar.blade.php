@@ -42,11 +42,11 @@
                         <span class="nxl-mtext">Notice</span></span>
                     </a>
                     <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="{{route('add_notice')}}">Add notice</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_notice')}}">View notice</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_tender')}}">View tender</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_orders')}}">View Order</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_circulars')}}">View Circular</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="{{route('add_notice')}}">Add Notice</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_notice')}}">View News</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_tender')}}">View Tenders</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_orders')}}">View Orders</a></li>
+                        <li class="nxl-item"><a class="nxl-link" href="{{route('view_circulars')}}">View Circulars</a></li>
                         <li class="nxl-item"><a class="nxl-link" href="{{route('view_recruitments')}}">View Recruitments</a></li>
                         <li class="nxl-item"><a class="nxl-link" href="{{route('view_notifications')}}">View Notificatons</a></li>
                         <!-- <li class="nxl-item"><a class="nxl-link" href="reports-project.html">Project Report</a></li>

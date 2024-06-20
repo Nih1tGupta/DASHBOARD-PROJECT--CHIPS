@@ -257,7 +257,13 @@ Route::get('/e&it_views/photo_gallery2/{id}',[App\Http\Controllers\GalleryContai
 
 
 
+Route::get('/view_notice/{id}', [App\Http\Controllers\GalleryContainer::class, 'eit_view_notice_id'])->name('eit_view_notice_id');
+Route::get('/notice_board', [App\Http\Controllers\GalleryContainer::class, 'eit_view_notice_board'])->name('eit_view_notice_board');
 
+
+Route::get('/about_chips', function () {
+    return view('e&it_views.about_chips');
+})->name('e&it_views.about_chips');
 
 
 

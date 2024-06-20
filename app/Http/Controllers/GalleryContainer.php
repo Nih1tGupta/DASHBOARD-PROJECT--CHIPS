@@ -389,7 +389,7 @@ public function added_notice(Request $request){
         return view('admin.view_notice', $data);
     }
     public function view_notifications(){
-        $all_notice= DB::table('notice')->where('type', 6)->get();
+        $all_notice= DB::table('notice')->where('type', 3)->get();
        
         $data['all_notice'] = $all_notice;
         $all_types = DB::table('type_master')->get();
@@ -431,15 +431,123 @@ public function added_notice(Request $request){
       
     // NEW NEW
 
+    
+    public function eit_view_notifications()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 6)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+     
+    public function eit_view_recruitments()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 5)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+
+    public function eit_view_circulars()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 4)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+
+    public function eit_view_orders()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 3)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+
+
+  
+    public function eit_view_tenders()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 2)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+    public function eit_view_news()
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        $all_notices = DB::table('notice')->where('type', 1)->get();
+        $data['all_notices'] = $all_notices;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notifications', $data);
+    }
+
+
+
+
+
     public function eit_view_notice_board()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         $all_notices = DB::table('notice')->orderBy('id', 'desc')->get();
         $data['all_notices'] = $all_notices;
@@ -447,107 +555,129 @@ public function added_notice(Request $request){
         $data['types'] = $all_types;
         return view('e&it_views.view_notice', $data);
     }
+      
+    public function eit_view_notice_id($id)
+    {
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
+
+        $data['notices'] = $notices;
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_tenders'] = $total_tenders;
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_circulars'] = $total_circulars;
+        
+        $notice_data = DB::table('notice')->where('id', $id)->first();
+        $data['notice'] = $notice_data;
+        $attachments = DB::table('notice1')->where('foreign_id', $id)->get();
+        $data['attachments'] = $attachments;
+        $all_types = DB::table('type_master')->get();
+        $data['types'] = $all_types;
+        return view('e&it_views.view_notice_id', $data);
+    }
+
 
 
 
     public function view_home()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.home', $data);
     }
 
     public function view_acts_and_rules()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.acts_and_rules', $data);
     }
 
     public function view_subject_matter_art_scheme()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.subject_matter_art_scheme', $data);
     }
     public function view_right_to_information()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.right_to_information', $data);
     }
     public function view_whos_who()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.whos_who', $data);
     }
 
     public function view_achievements()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.achievement', $data);
     }
 
     public function view_organization_chart()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.organization_chart', $data);
     }
 
     public function view_departmental_structure()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.departmental_structure', $data);
     }
@@ -555,37 +685,37 @@ public function added_notice(Request $request){
     
     public function view_services()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.services', $data);
     }
   public function view_program_and_schemes()
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.program_and_schemes', $data);
     }
     public function view_departmental_activities() 
     {
-        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(6)->get();
+        $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
-        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(6)->get();
+        $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_tenders'] = $total_tenders;
-        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(6)->get();
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_news'] = $total_news;
-        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(6)->get();
+        $total_circulars = DB::table('notice')->where('type', 4)->orderBy('id', 'desc')->limit(3)->get();
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.departmental_activities', $data);
     }

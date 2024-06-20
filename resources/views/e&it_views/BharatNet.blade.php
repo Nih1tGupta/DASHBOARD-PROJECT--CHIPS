@@ -199,7 +199,7 @@
                 </div>
             </div>
 
-
+            @include('e&it_views.include.chips_activity_sidebar')
         </div>
     </div>
 </section>

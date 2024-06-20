@@ -140,34 +140,7 @@
 
 
             
-<div class="col-xl-4 col-lg-4">
-                        <div class="department-details__right">
-                            <h3 class="department-details__download-title">NOTICE BOARD</h3>
-                            <div class="department-details__services-box">
-                                <ul class="department-details__services-list list-unstyled">
-                                    <li>
-                                        <a href="#">Your Government<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Jobs & Unemployment<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Business & Industrials<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Roads & Transportation<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Art & Culture<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Policing & Crimes<span class="icon-right-arrow"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
+
 
         </div>
 
@@ -178,7 +151,7 @@
 
 
 
-
+    @include('e&it_views.include.sidebar_notice_board')
     @include('e&it_views.include.table')
 
     @endsection

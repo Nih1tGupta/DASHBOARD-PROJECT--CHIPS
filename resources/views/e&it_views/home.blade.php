@@ -21,7 +21,7 @@
                                 <p class="main-slider-three__sub-title">Welcome to the official website of</p>
                                 <h2 class="main-slider-three__title">Department of E&amp;IT <br> Chhattisgarh</h2>
                                 <div class="main-slider-three__btn-box">
-                                    <a href="about.html" class="main-slider-three__btn thm-btn">Know More</a>
+                                    <a href="{{route('e&it_views.chips_activity')}}" class="main-slider-three__btn thm-btn">Know More</a>
                                 </div>
                                 <div class="main-slider-three__weather-box">
                                     <div class="about-three__services-box">
@@ -29,21 +29,21 @@
                                         <ul class="about-three__services-list list-unstyled">
                                             <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
                                                     Data Center</a></li>
-                                            <li><a href="tax-return.html"><i class="fa fa-angle-right"></i>CG SWAN</a>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i>CG SWAN</a>
                                             </li>
-                                            <li><a href="building-permission.html"><i
+                                            <li><a href="{{route('e&it_views.Geographic')}}"><i
                                                         class="fa fa-angle-right"></i>GIS</a></li>
-                                            <li><a href="building-permission.html"><i class="fa fa-angle-right"></i> 36
+                                            <li><a href="{{route('e&it_views.Incubator')}}"><i class="fa fa-angle-right"></i> 36
                                                     Inc</a></li>
-                                            <li><a href="parking-permission.html"><i
+                                            <li><a href="{{route('e&it_views.E')}}"><i
                                                         class="fa fa-angle-right"></i>eDistrict</a></li>
-                                            <li><a href="parking-permission.html"><i class="fa fa-angle-right"></i>Wifi
+                                            <li><a href="{{route('e&it_views.Wi-Fi')}}"><i class="fa fa-angle-right"></i>Wifi
                                                     City</a></li>
-                                            <li><a href="parking-permission.html"><i
+                                            <li><a href="#"><i
                                                         class="fa fa-angle-right"></i>SLCM</a></li>
                                         </ul>
-                                        <div class="about-three__btn-box">
-                                            <a href="our-services.html" class="about-three__btn thm-btn">Discover
+                                        <div class="fd">
+                                            <a href="{{route('e&it_views.chips_activity')}}" class="about-three__btn thm-btn">Discover
                                                 More</a>
                                         </div>
                                     </div>
@@ -58,52 +58,11 @@
                             style="background-image: url({{ asset('eit_assets/images/backgrounds/slider-3-1.jpg'); }});">
                         </div><!-- /.slider-one__bg -->
                         <div class="container">
-                            <div class="main-slider-three__content">
+                        <div class="main-slider-three__content">
                                 <p class="main-slider-three__sub-title">Welcome to the official website of</p>
                                 <h2 class="main-slider-three__title">Department of E&amp;IT <br> Chhattisgarh</h2>
                                 <div class="main-slider-three__btn-box">
-                                    <a href="about.html" class="main-slider-three__btn thm-btn">Know More</a>
-                                </div>
-                                <div class="main-slider-three__weather-box">
-                                    <div class="about-three__services-box">
-                                        <h3 class="about-three__services-title">Key Projects</h3>
-                                        <ul class="about-three__services-list list-unstyled">
-                                            <li><a href="birth-certificate.html"><i class="fa fa-angle-right"></i>State
-                                                    Data Center</a></li>
-                                            <li><a href="tax-return.html"><i class="fa fa-angle-right"></i>CG SWAN</a>
-                                            </li>
-                                            <li><a href="building-permission.html"><i
-                                                        class="fa fa-angle-right"></i>GIS</a></li>
-                                            <li><a href="building-permission.html"><i class="fa fa-angle-right"></i> 36
-                                                    Inc</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>eDistrict</a></li>
-                                            <li><a href="parking-permission.html"><i class="fa fa-angle-right"></i>Wifi
-                                                    City</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>SLCM</a></li>
-                                        </ul>
-                                        <div class="about-three__btn-box">
-                                            <a href="our-services.html" class="about-three__btn thm-btn">Discover
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item active" style="width: 1028px;">
-                    <div class="item main-slider-three__slide-1">
-                        <div class="main-slider-three__bg"
-                            style="background-image: url({{ asset('eit_assets/images/backgrounds/slider-3-1.jpg'); }});">
-                        </div><!-- /.slider-one__bg -->
-                        <div class="container">
-                            <div class="main-slider-three__content">
-                                <p class="main-slider-three__sub-title">Welcome to the official website of</p>
-                                <h2 class="main-slider-three__title">Department of E&amp;IT <br> Chhattisgarh</h2>
-                                <div class="main-slider-three__btn-box">
-                                    <a href="about.html" class="main-slider-three__btn thm-btn">Know More</a>
+                                    <a href="{{route('e&it_views.chips_activity')}}" class="main-slider-three__btn thm-btn">Know More</a>
                                 </div>
                                 <div class="main-slider-three__weather-box">
                                     <div class="about-three__services-box">
@@ -111,21 +70,21 @@
                                         <ul class="about-three__services-list list-unstyled">
                                             <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
                                                     Data Center</a></li>
-                                            <li><a href="tax-return.html"><i class="fa fa-angle-right"></i>CG SWAN</a>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i>CG SWAN</a>
                                             </li>
-                                            <li><a href="building-permission.html"><i
+                                            <li><a href="{{route('e&it_views.Geographic')}}"><i
                                                         class="fa fa-angle-right"></i>GIS</a></li>
-                                            <li><a href="building-permission.html"><i class="fa fa-angle-right"></i> 36
+                                            <li><a href="{{route('e&it_views.Incubator')}}"><i class="fa fa-angle-right"></i> 36
                                                     Inc</a></li>
-                                            <li><a href="parking-permission.html"><i
+                                            <li><a href="{{route('e&it_views.E')}}"><i
                                                         class="fa fa-angle-right"></i>eDistrict</a></li>
-                                            <li><a href="parking-permission.html"><i class="fa fa-angle-right"></i>Wifi
+                                            <li><a href="{{route('e&it_views.Wi-Fi')}}"><i class="fa fa-angle-right"></i>Wifi
                                                     City</a></li>
-                                            <li><a href="parking-permission.html"><i
+                                            <li><a href="#"><i
                                                         class="fa fa-angle-right"></i>SLCM</a></li>
                                         </ul>
-                                        <div class="about-three__btn-box">
-                                            <a href="our-services.html" class="about-three__btn thm-btn">Discover
+                                        <div class="fd">
+                                            <a href="{{route('e&it_views.chips_activity')}}" class="about-three__btn thm-btn">Discover
                                                 More</a>
                                         </div>
                                     </div>
@@ -134,88 +93,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="owl-item cloned" style="width: 1028px;">
-                    <div class="item main-slider-three__slide-1">
-                        <div class="main-slider-three__bg"
-                            style="background-image: url({{ asset('eit_assets/images/backgrounds/slider-3-1.jpg'); }});">
-                        </div><!-- /.slider-one__bg -->
-                        <div class="container">
-                            <div class="main-slider-three__content">
-                                <p class="main-slider-three__sub-title">Welcome to the official website of</p>
-                                <h2 class="main-slider-three__title">Department of E&amp;IT <br> Chhattisgarh</h2>
-                                <div class="main-slider-three__btn-box">
-                                    <a href="about.html" class="main-slider-three__btn thm-btn">Know More</a>
-                                </div>
-                                <div class="main-slider-three__weather-box">
-                                    <div class="about-three__services-box">
-                                        <h3 class="about-three__services-title">Key Projects</h3>
-                                        <ul class="about-three__services-list list-unstyled">
-                                            <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
-                                                    Data Center</a></li>
-                                            <li><a href="tax-return.html"><i class="fa fa-angle-right"></i>CG SWAN</a>
-                                            </li>
-                                            <li><a href="building-permission.html"><i
-                                                        class="fa fa-angle-right"></i>GIS</a></li>
-                                            <li><a href="building-permission.html"><i class="fa fa-angle-right"></i> 36
-                                                    Inc</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>eDistrict</a></li>
-                                            <li><a href="parking-permission.html"><i class="fa fa-angle-right"></i>Wifi
-                                                    City</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>SLCM</a></li>
-                                        </ul>
-                                        <div class="about-three__btn-box">
-                                            <a href="our-services.html" class="about-three__btn thm-btn">Discover
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-item cloned" style="width: 1028px;">
-                    <div class="item main-slider-three__slide-1">
-                        <div class="main-slider-three__bg"
-                            style="background-image: url({{ asset('eit_assets/images/backgrounds/slider-3-1.jpg'); }});">
-                        </div><!-- /.slider-one__bg -->
-                        <div class="container">
-                            <div class="main-slider-three__content">
-                                <p class="main-slider-three__sub-title">Welcome to the official website of</p>
-                                <h2 class="main-slider-three__title">Department of E&amp;IT <br> Chhattisgarh</h2>
-                                <div class="main-slider-three__btn-box">
-                                    <a href="about.html" class="main-slider-three__btn thm-btn">Know More</a>
-                                </div>
-                                <div class="main-slider-three__weather-box">
-                                    <div class="about-three__services-box">
-                                        <h3 class="about-three__services-title">Key Projects</h3>
-                                        <ul class="about-three__services-list list-unstyled">
-                                            <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
-                                                    Data Center</a></li>
-                                            <li><a href="tax-return.html"><i class="fa fa-angle-right"></i>CG SWAN</a>
-                                            </li>
-                                            <li><a href="building-permission.html"><i
-                                                        class="fa fa-angle-right"></i>GIS</a></li>
-                                            <li><a href="building-permission.html"><i class="fa fa-angle-right"></i> 36
-                                                    Inc</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>eDistrict</a></li>
-                                            <li><a href="parking-permission.html"><i class="fa fa-angle-right"></i>Wifi
-                                                    City</a></li>
-                                            <li><a href="parking-permission.html"><i
-                                                        class="fa fa-angle-right"></i>SLCM</a></li>
-                                        </ul>
-                                        <div class="about-three__btn-box">
-                                            <a href="our-services.html" class="about-three__btn thm-btn">Discover
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
         <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"></button><button

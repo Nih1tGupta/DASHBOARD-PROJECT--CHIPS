@@ -140,7 +140,7 @@
 
 <section class="feature-four">
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <!--Feature Four Single Start-->
             <div class="col-xl-8 col-lg-8">
                 <div class="department-details__left">
@@ -194,37 +194,13 @@
             </div>
             <!--Feature Four Single End-->
             <!--Feature Four Single Start-->
-            <div class="col-xl-4 col-lg-5 mt-5 mt-5">
-                <div class="department-details__right">
-                    <h3 class="department-details__download-title">NOTICE BOARD</h3>
-                    <div class="department-details__services-box">
-                        <ul class="department-details__services-list list-unstyled">
-                            <li>
-                                <a href="#">Your Government<span class="icon-right-arrow"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Jobs & Unemployment<span class="icon-right-arrow"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Business & Industrials<span class="icon-right-arrow"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Roads & Transportation<span class="icon-right-arrow"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Art & Culture<span class="icon-right-arrow"></span></a>
-                            </li>
-                            <li>
-                                <a href="#">Policing & Crimes<span class="icon-right-arrow"></span></a>
-                            </li>
-                        </ul>
-                    </div>
 
-                </div>
-            </div>
+            @include('e&it_views.include.sidebar_notice_board')
+
 
         </div>
     </div>
 </section>
+
      @include('e&it_views.include.table')
 @endsection

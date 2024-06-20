@@ -1,4 +1,4 @@
-<div class="col-xl-4 col-lg-5">
+<div class="col-xl-4 col-lg-5 "style="margin-top:63px;" >
     <div class="department-details__right">
         <h3 class="department-details__download-title">NOTICE BOARD</h3>
         <div class="department-details__services-box">
