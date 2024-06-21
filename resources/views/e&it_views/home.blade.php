@@ -29,7 +29,7 @@
                                         <ul class="about-three__services-list list-unstyled">
                                             <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
                                                     Data Center</a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i>CG SWAN</a>
+                                            <li><a href="{{route('e&it_views.CG-SWAN')}}"><i class="fa fa-angle-right"></i>CG SWAN</a>
                                             </li>
                                             <li><a href="{{route('e&it_views.Geographic')}}"><i
                                                         class="fa fa-angle-right"></i>GIS</a></li>
@@ -70,7 +70,7 @@
                                         <ul class="about-three__services-list list-unstyled">
                                             <li><a href="{{route('e&it_views.State-Data')}}"><i class="fa fa-angle-right"></i>State
                                                     Data Center</a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i>CG SWAN</a>
+                                            <li><a href="{{route('e&it_views.CG-SWAN')}}"><i class="fa fa-angle-right"></i>CG SWAN</a>
                                             </li>
                                             <li><a href="{{route('e&it_views.Geographic')}}"><i
                                                         class="fa fa-angle-right"></i>GIS</a></li>

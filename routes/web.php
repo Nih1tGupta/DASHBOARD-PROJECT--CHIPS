@@ -265,6 +265,10 @@ Route::get('/about_chips', function () {
     return view('e&it_views.about_chips');
 })->name('e&it_views.about_chips');
 
+Route::get('/CG-SWAN', function () {
+    return view('e&it_views.CG-SWAN');
+})->name('e&it_views.CG-SWAN');
+
 // footer- chips
 Route::get('/Accessibility', function () {
     return view('e&it_views.Accessibility');
