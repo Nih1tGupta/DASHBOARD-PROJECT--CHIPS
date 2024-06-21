@@ -265,6 +265,71 @@ Route::get('/about_chips', function () {
     return view('e&it_views.about_chips');
 })->name('e&it_views.about_chips');
 
+// footer- chips
+Route::get('/Accessibility', function () {
+    return view('e&it_views.Accessibility');
+})->name('e&it_views.Accessibility');
+
+Route::get('/Disclaimer', function () {
+    return view('e&it_views.Disclaimer');
+})->name('e&it_views.Disclaimer');
+
+Route::get('/Copyright', function () {
+    return view('e&it_views.Copyright');
+})->name('e&it_views.Copyright');
+
+Route::get('/Site', function () {
+    return view('e&it_views.Site');
+})->name('e&it_views.Site');
+
+Route::get('/Feedback', function () {
+    return view('e&it_views.Feedback');
+})->name('e&it_views.Feedback');
+
+Route::get('/Hyperlink', function () {
+    return view('e&it_views.Hyperlink');
+})->name('e&it_views.Hyperlink');
+
+Route::get('/Privacy', function () {
+    return view('e&it_views.Privacy');
+})->name('e&it_views.Privacy');
+
+Route::get('/Accessibility', function () {
+    return view('e&it_views.Accessibility');
+})->name('e&it_views.Accessibility');
+
+Route::get('/Terms-and-Conditions', function () {
+    return view('e&it_views.Terms-and-Conditions');
+})->name('e&it_views.Terms-and-Conditions');
+
+Route::get('/Terms-of-Use', function () {
+    return view('e&it_views.Terms-of-Use');
+})->name('e&it_views.Terms-of-Use');
+
+Route::get('/Help', function () {
+    return view('e&it_views.Help');
+})->name('e&it_views.Help');
+
+
+Route::get('/Archive', function () {
+    return view('e&it_views.Archive');
+})->name('e&it_views.Archive');
+
+Route::get('/Best', function () {
+    return view('e&it_views.Best');
+})->name('e&it_views.Best');
+
+
+Route::get('/ISO', function () {
+    return view('e&it_views.ISO');
+})->name('e&it_views.ISO');
+
+
+
+Route::get('/Related', function () {
+    return view('e&it_views.Related');
+})->name('e&it_views.Related');
+
 
 
 

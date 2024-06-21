@@ -7,15 +7,16 @@
     </div>
     <div class="container">
         <div class="page-header__inner" style="padding-top:50px;">
-            <h2>Contact Us</h2>
+            <h2> Important Links</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{ route('view_home') }}">Home</a></li>
                 <li><span>/</span></li>
-                <li>Contact Us</li>
+                <li>Best Practice Videos </li>
             </ul>
         </div>
     </div>
 </section>
+
 <section class="update-one">
     <div class="container">
         <div class="row">
@@ -136,182 +137,189 @@
         </div>
     </div>
 </section>
-<section class="contact-page">
-    <div class="container">
-        <div class="contact-page__top">
-            <div class="row">
 
-                <div class="col-xl-6 col-lg-6">
-                    <div class="section-title text-left">
-                        <div class="section-title__icon">
-                            <span class="fa fa-star"></span>
+<section class="feature-four">
+    <div class="container">
+        <div class="row">
+            <!--Feature Four Single Start-->
+            <div class="col-xl-8 col-lg-8">
+                <div class="department-details__left">
+                    <div class="department-details__icon-and-title">
+                        <div class="department-details__icon">
+                            <span class="fa fa-tasks"></span>
                         </div>
-                        <h2 class="section-title__title">Get in touch now</h2>
+                        <h3 class="department-details__title center">Best Practice Videos<h3>
                     </div>
-                    <div class="contact-one__form-box">
-                        <form action="assets/inc/sendemail.php.html" class="contact-one__form contact-form-validated"
-                            novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="contact-one__input-box">
-                                        <input type="text" placeholder="Your Name" name="name">
-                                    </div>
+                    <div class="faq-one__right mt-3">
+                        <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion">
+
+
+
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        Affidavit free regime in Punjab
+                                    </h4>
                                 </div>
-                                <div class="col-xl-6">
-                                    <div class="contact-one__input-box">
-                                        <input type="email" placeholder="Email Address" name="email">
-                                    </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                </li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="contact-one__input-box text-message-box">
-                                        <textarea name="message" placeholder="Write Comment"></textarea>
-                                    </div>
-                                    <div class="contact-one__btn-box">
-                                        <button type="submit" class="thm-btn contact-one__btn">Send a
-                                            Message</button>
-                                    </div>
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        Control Office Application (COA)
+                                    </h4>
+                                </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
                                 </div>
                             </div>
-                        </form>
-                        <div class="result"></div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="contact-page__right">
-                        <div class="section-title text-left">
-                            <div class="section-title__icon">
-                                <span class="fa fa-star"></span>
+
+
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        Automated Building Plan Approval System (ABPAS)
+                                    </h4>
+                                </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
+                                </div>
                             </div>
-                            <h2 class="section-title__title">Contact Us</h2>
+
+
+
+
+
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        SAND- System For Attumanal Neutral Distribution
+                                    </h4>
+                                </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                </li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+
+
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        Conduct of Panchayat Elections in Jammu & Kashmir
+                                    </h4>
+                                </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                </li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="g">
+                                <div class="g-title" style="margin-top:12px;margin-bottom:14px;">
+                                    <h4>
+                                        Cervical Cancer Screening Initiative Chennai, Tamilnadu
+                                    </h4>
+                                </div>
+                                <div class="accrodfion-content">
+                                    <div class="inner">
+                                        <ol>
+                                            <p>
+
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                <li><a href="#"> Visit</a></li>
+                                                </li>
+
+
+
+
+                                            </p>
+                                            <ol>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- <p class="contact-page__text">Lorem ipsum dolor sit amet, consectetur notted adipis not
-                                    icing elit sed do eiusmod tempor incididunt.</p> -->
-                        <ul class="list-unstyled contact-page__contact-list">
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <p>Have any Question?</p>
-                                    <h5><a href="tel:(771) 4014158"> +91 (771) 4014158 /4023123
-                                    </a></h5>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <div class="content">
-                                    <p>Write Email</p>
-                                    <h4><a href="mailto:ceochips@nic.in">ceochips@nic.in</a></h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-address-card"></i>
-                                </div>
-                                <div class="content">
-                                    <p>Visit Anytime</p>
-                                    <h5>
-                                    Chhattisgarh Infotech Promotion Society <br> State Data Centre Building,
-                                        
-                                        Opp. New Circuit House,
-                                        <br>
-                                        Civil Lines, Raipur-492001,
-                                        Chhattisgarh</h5>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                 
+                    <!--Feature Four Single End-->
+                    <!--Feature Four Single Start-->
+                    <!-- @include('e&it_views.include.footer_sidebar') -->
+
                 </div>
             </div>
         </div>
-
+        @include('e&it_views.include.imp_links_sidebar')
     </div>
+  
 </section>
-
-
-
-<section class="team-one team-page">
-    <div class="container">
-        <div class="team-one__inner">
-            <div class="row">
-
-                <!--Team One Single Start-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="team-one__single">
-                        <!-- <div class="team-one__shape-4">
-                                    <img src="assets/images/shapes/team-one-shape-4.png" alt="">
-                                </div> -->
-                        <div class="team-one__img-box">
-                            <div class="team-one__img">
-                                <img src="{{ asset('eit_assets/images/people/cm.jpg'); }}" style="height:319px;">
-                            </div>
-                        </div>
-                        <div class="team-one__content">
-                            <h3 class="team-one__name"><a href="team-details.html">Shri Vishnu Dev Say</a></h3>
-                            <p class="team-one__sub-title">Honourable Chief Minister<br> Chhattisgarh</p>
-                            <!--  <div class="team-one__social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div> -->
-                        </div>
-                    </div>
-                </div>
-                <!--Team One Single End-->
-                <!--Team One Single Start-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="team-one__single">
-
-
-                        <div class="team-one__img-box">
-                            <div class="team-one__img">
-                                <img src="{{ asset('eit_assets/images/people/niharika_barikh.jpg'); }}"
-                                    style="height:319px;">
-
-                            </div>
-                        </div>
-                        <div class="team-one__content">
-
-                            <div class="team-one__content">
-                                <h3 class="team-one__name"><a href="team-details.html">Niharika Barik Singh</a></h3>
-                                <p class="team-one__sub-title">Principal Secretary (Department of Electronics &
-                                    Information Technology)</p>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!--Team One Single End-->
-                <!--Team One Single Start-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="team-one__single">
-
-                        <div class="team-one__img-box">
-                            <div class="team-one__img">
-                                <img src=" {{ asset('eit_assets/images/people/RiteshKumarAgarwal_IAS.jpg'); }}"
-                                    style="height:319px;">
-                            </div>
-                        </div>
-                        <div class="team-one__content">
-                            <h3 class="team-one__name"><a href="team-details.html">Mr. Ritesh Kumar Agarwal (IAS)</a>
-                            </h3>
-                            <p class="team-one__sub-title">Joint Secretary <br>CHIPS</p>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <!--Team One Single End-->
-            </div>
-        </div>
-    </div>
-</section>
-
 @endsection

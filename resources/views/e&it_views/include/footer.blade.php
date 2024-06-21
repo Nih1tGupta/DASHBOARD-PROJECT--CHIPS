@@ -3,8 +3,8 @@
         <img src="assets/images/resources/site-footer-img.jpg" alt="">
     </div>
     <div class="container">
-        <div class="site-footer__middle">
-            <div class="row">
+        <div class="site-footer__middle"style="left:121px;">
+            <div class="row" >
                 <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="100ms"
                     style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
                     <div class="footer-widget__column footer-widget__Contact">
@@ -21,7 +21,7 @@
                                     <span class="icon-email"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="mailto:ceochips[at]nic[dot]in"> ceochips[at]nic[dot]in</a></p>
+                                    <p><a href="mailto:ceochips@nic.in"> ceochips@nic.in</a></p>
                                 </div>
                             </li>
                             <li>
@@ -50,14 +50,14 @@
                             <h3 class="footer-widget__title">Important Links</h3>
                         </div>
                         <ul class="footer-widget__link-list list-unstyled">
-                            <li><a href="#">Archive</a></li>
-                            <li><a href="#">Best Practice Videos</a></li>
-                            <li><a href="#">ISO 9001-2000 Certified</a></li>
-                            <li><a href="#">Related Links</a></li>
+                            <li><a href="{{ route('e&it_views.Archive') }}">Archive</a></li>
+                            <li><a href="{{ route('e&it_views.Best') }}">Best Practice Videos</a></li>
+                            <li><a href="{{ route('e&it_views.ISO') }}">ISO 9001-2000 Certified</a></li>
+                            <li><a href="{{ route('e&it_views.Related') }}">Related Links</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp animated" data-wow-delay="400ms"
+                <!-- <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp animated" data-wow-delay="400ms"
                     style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
                     <div class="footer-widget__column footer-widget__explore">
                         <div class="footer-widget__title-box">
@@ -70,7 +70,7 @@
                             <li><a href="about.html">Circular’s And Go’s</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="500ms"
                     style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
                     <div class="footer-widget__column footer-widget__gallery">
@@ -92,16 +92,16 @@
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
                         <ul class="h-list">
-                            <li><a href="#">Accessibility Statement</a></li>
-                            <li><a href="#">Disclaimer</a></li>
-                            <li><a href="#">Copyright Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Feedback</a></li>
-                            <li><a href="#">Hyperlink Policy</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms &amp; Condition</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Help</a></li>
+                        <ul class="menu"><li class="first leaf menu-mlid-2045"><a href="{{ route('e&it_views.Accessibility') }}">Accessibility Statement</a></li>
+                        <li class="leaf menu-mlid-953"><a href="{{ route('e&it_views.Disclaimer') }}">Disclaimer</a></li>
+<li class="leaf menu-mlid-951"><a href="{{ route('e&it_views.Copyright') }}">Copyright Policy</a></li>
+<li class="leaf menu-mlid-918"><a href="{{ route('e&it_views.Site') }}">Site Map</a></li>
+<li class="leaf menu-mlid-947"><a href="{{ route('e&it_views.Feedback') }}">Feedback</a></li>
+<li class="leaf menu-mlid-952"><a href="{{ route('e&it_views.Hyperlink') }}">Hyperlink Policy</a></li>
+<li class="leaf menu-mlid-950"><a href="{{ route('e&it_views.Privacy') }}">Privacy Policy</a></li>
+<li class="leaf menu-mlid-949"><a href="{{ route('e&it_views.Terms-and-Conditions') }}">Terms &amp; Condition</a></li>
+<li class="leaf menu-mlid-915"><a href="{{ route('e&it_views.Terms-of-Use') }}">Terms of Use</a></li>
+<li class="last leaf menu-mlid-920"><a href="{{ route('e&it_views.Help') }}">Help</a></li>
                         </ul>
                         <p class="site-footer__bottom-text">Site Visitors: 37761 <br>
                             Last updated: 06-May-2024 3:36 pm
