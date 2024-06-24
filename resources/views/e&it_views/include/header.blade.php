@@ -123,7 +123,7 @@
                                             <li><a href="{{ route('view_departmental_activities') }}">Departmental Activities</a></li>
                                             <li><a href="{{ route('view_departmental_structure') }}">Departmental Structures</a></li>
                                             <li><a href="{{route('view_subject_matter_art_scheme')}}">Subject
-                                                    Matter of formulated policy</a></li>
+                                                    Matter of..</a></li>
                                         </ul>
                                     </li>
 

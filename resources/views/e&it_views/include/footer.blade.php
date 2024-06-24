@@ -29,7 +29,7 @@
                                     <span class="fas fa-phone-square"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="#">+91 (771) 4014158 /4023123</a></p>
+                                    <p><a href="tel:(771) 4014158">+91 (771) 4014158 /4023123</a></p>
                                 </div>
                             </li>
                             <li>
@@ -37,7 +37,7 @@
                                     <span class="fas fa-fax"></span>
                                 </div>
                                 <div class="text">
-                                    <p><a href="#">+91 (771) 4066205</a></p>
+                                    <p><a href="tel:(771) 4066205">+91 (771) 4066205</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -103,9 +103,7 @@
 <li class="leaf menu-mlid-915"><a href="{{ route('e&it_views.Terms-of-Use') }}">Terms of Use</a></li>
 <li class="last leaf menu-mlid-920"><a href="{{ route('e&it_views.Help') }}">Help</a></li>
                         </ul>
-                        <p class="site-footer__bottom-text">Site Visitors: 37761 <br>
-                            Last updated: 06-May-2024 3:36 pm
-
+                        <p class="site-footer__bottom-text "id="modified"><br>
                         </p>
                     </div>
                 </div>

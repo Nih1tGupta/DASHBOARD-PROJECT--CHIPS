@@ -719,5 +719,38 @@ public function added_notice(Request $request){
         $data['total_circulars'] = $total_circulars;
         return view('e&it_views.departmental_activities', $data);
     }
+    // EMAIL sent
+     public function email(Request $request){
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $message = $request->input('message');
+        // insert into DB
+        DB::table('email')->insert([
+            
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'message'=>$request->message,
+            'created_at'=>date('Y-m-d H:i:s'),
+            'updated_at'=>date('Y-m-d H:i:s')
+            ]);
+       
+        return redirect(route('e&it_views.contact_us'))->with ('success','Request sent successfully');
+   }
+    // admin view  
+    public function view_all_email(){
+        $details = DB::table('email')->get();
+        $data['details']=$details;
+        return view('admin.notify',$data);
+    }
+
+//     admin  inside view
+   public function email_id($id){
+    $detail = DB::table('email')->where('message_id',$id)->first();
+    $data['detail']=$detail;
+    return view('admin.email_id',$data);
+
+   }
+
+
 
 }

@@ -9,7 +9,7 @@
         <div class="page-header__inner" style="padding-top:50px;">
             <h2>Acts & Rules</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">About Us</a></li>
+                <li><a href="{{route('view_home')}}">Home</a></li>
                 <li><span>/</span></li>
                 <li>Acts & Rules</li>
             </ul>

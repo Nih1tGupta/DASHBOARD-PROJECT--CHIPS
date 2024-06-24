@@ -366,6 +366,8 @@
 
     }
     </script>
+    <script>var lastModified = document.lastModified;
+document.getElementById("modified").innerHTML = "Date:" + lastModified;</script>
     <script src="{{ asset('eit_assets/vendors/jquery/jquery-3.6.0.min.js'); }}"></script>
     <script src="{{ asset('eit_assets/vendors/bootstrap/js/bootstrap.bundle.min.js'); }}"></script>
     <script src="{{ asset('eit_assets/vendors/jarallax/jarallax.min.js'); }}"></script>

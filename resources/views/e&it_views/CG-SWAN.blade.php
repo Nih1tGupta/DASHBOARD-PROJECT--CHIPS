@@ -11,7 +11,7 @@
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{ route('view_home') }}">Home</a></li>
                 <li><span>/</span></li>
-                <li>G-SWAN</li>
+                <li>CG-SWAN</li>
             </ul>
         </div>
     </div>

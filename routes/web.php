@@ -105,10 +105,8 @@ Route::get('/admin/view_gallery/{id}',[App\Http\Controllers\GalleryContainer::cl
 Route::post('/admin/view_gallery/{id}',[App\Http\Controllers\GalleryContainer::class,'view_gallery_id_post'])->name('view_gallery_id_post') ;
 
 
-Route::get('/admin/notify', function () {
-    return view('admin.notify');
-})->name('notify');
 
+Route::get('/admin/notify', [App\Http\Controllers\GalleryContainer::class,'view_all_email'])->name('notify');
 
 Route::get('/admin/request', function () {
     return view('admin.request');
@@ -260,6 +258,8 @@ Route::get('/e&it_views/photo_gallery2/{id}',[App\Http\Controllers\GalleryContai
 Route::get('/view_notice/{id}', [App\Http\Controllers\GalleryContainer::class, 'eit_view_notice_id'])->name('eit_view_notice_id');
 Route::get('/notice_board', [App\Http\Controllers\GalleryContainer::class, 'eit_view_notice_board'])->name('eit_view_notice_board');
 
+Route::post('/contact_us', [App\Http\Controllers\GalleryContainer::class, 'email'])->name('email');
+Route::get('admin/email_id/{id}', [App\Http\Controllers\GalleryContainer::class, 'email_id'])->name('email_id');
 
 Route::get('/about_chips', function () {
     return view('e&it_views.about_chips');

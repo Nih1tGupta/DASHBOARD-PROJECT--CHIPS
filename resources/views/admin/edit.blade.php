@@ -119,7 +119,7 @@
             
                                     </div>
                                     
-    <button type="submit" class="btn btn-primary  w-25 mb-4 ms-auto me-auto">Submit</button>
+    <input type="submit" class="btn btn-primary  w-25 mb-4 ms-auto me-auto" value="submit" >
 </div></div>
      
  

@@ -9,7 +9,7 @@
         <div class="page-header__inner" style="padding-top:50px;">
             <h2>Contact Us</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{route('view_home')}}">Home</a></li>
                 <li><span>/</span></li>
                 <li>Contact Us</li>
             </ul>
@@ -139,6 +139,25 @@
 <section class="contact-page">
     <div class="container">
         <div class="contact-page__top">
+            
+    <div class="mt-1">
+        @if($errors->any())
+        <div class="col-12">
+            @foreach($errors->all() as $error)
+            <div class=" alert alert-danger">{{$error}}</div>
+            @endforeach
+        </div>
+        @endif
+
+        @if(session()->has('error'))
+        <div class=" alert alert-danger">{{session('error')}}</div>
+        @endif
+
+        @if(session()->has('success'))
+        <div class="alert alert-success">{{session('success')}}</div>
+        @endif
+
+    </div>
             <div class="row">
 
                 <div class="col-xl-6 col-lg-6">
@@ -149,8 +168,8 @@
                         <h2 class="section-title__title">Get in touch now</h2>
                     </div>
                     <div class="contact-one__form-box">
-                        <form action="assets/inc/sendemail.php.html" class="contact-one__form contact-form-validated"
-                            novalidate="novalidate">
+                        <form action="{{route('email')}}"  method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="contact-one__input-box">
@@ -166,11 +185,10 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="contact-one__input-box text-message-box">
-                                        <textarea name="message" placeholder="Write Comment"></textarea>
+                                        <textarea name="message" placeholder="Write Comment" ></textarea>
                                     </div>
                                     <div class="contact-one__btn-box">
-                                        <button type="submit" class="thm-btn contact-one__btn">Send a
-                                            Message</button>
+                                    <input type="submit" class="btn btn-primary  w-25 mb-4 ms-auto me-auto" value ="Send">
                                     </div>
                                 </div>
                             </div>
