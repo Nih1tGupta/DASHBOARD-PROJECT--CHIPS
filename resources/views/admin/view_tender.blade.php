@@ -109,8 +109,8 @@
                                                                 <span>View</span>
                                                             </a>
                                                     @else
-                                                    <a href="{{ asset('inside')}}" class="btn btn-primary">
-                                                        <span>View</span>
+                                                    <a href="{{ $notice->url }}" class="btn btn-primary">
+                                                        <span>URL</span>
                                                     </a>
                                                     @endif
                                                 </td>

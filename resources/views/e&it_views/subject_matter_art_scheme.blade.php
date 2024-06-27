@@ -7,11 +7,11 @@
     </div>
     <div class="container">
         <div class="page-header__inner" style="padding-top:50px;">
-            <h2>Acts & Rules</h2>
+            <h2>Subject Matter Art Scheme</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">About Us</a></li>
+                <li><a href="{{route('view_home')}}">Home</a></li>
                 <li><span>/</span></li>
-                <li>Acts & Rules</li>
+                <li>Subject Matter Art Scheme</li>
             </ul>
         </div>
     </div>

@@ -7,11 +7,11 @@
     </div>
     <div class="container">
         <div class="page-header__inner" style="padding-top:50px;">
-            <h2>Achievement</h2>
+            <h2>Chips Activity</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">About Us</a></li>
+                <li><a href="{{route('view_home')}}">Home</a></li>
                 <li><span>/</span></li>
-                <li>Achievement</li>
+                <li>Chips Activity</li>
             </ul>
         </div>
     </div>

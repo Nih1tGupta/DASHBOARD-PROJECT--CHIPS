@@ -297,7 +297,7 @@ return redirect(route('photos2',$request->id))->with ('success','Photo Added Suc
 function logout(){
     Session::flush();
     Auth::logout();
-    return redirect( route('login'));
+    return redirect( route('view_home'));
 }
 
 public function add_notice(){
@@ -407,6 +407,8 @@ public function added_notice(Request $request){
         $data['attachments'] = $attachments;
         $all_types = DB::table('type_master')->get();
         $data['types'] = $all_types;
+        $url = DB::table('notice')->get();
+        $data['url']=$url;
         return view('admin.inside', $data);
     }
 
@@ -553,7 +555,7 @@ public function added_notice(Request $request){
         $data['all_notices'] = $all_notices;
         $all_types = DB::table('type_master')->get();
         $data['types'] = $all_types;
-        return view('e&it_views.view_notice', $data);
+        return view('e&it_views.view_notice_board', $data);
     }
       
     public function eit_view_notice_id($id)

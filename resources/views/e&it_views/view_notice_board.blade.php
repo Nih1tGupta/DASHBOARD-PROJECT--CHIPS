@@ -9,7 +9,7 @@
         <div class="page-header__inner" style="padding-top: 50px;">
             <h2>Notice Board</h2>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="#">Notice Board</a></li>
+                <li><a href="{{route('view_home')}}">Home</a></li>
                 <li><span>/</span></li>
                 <li>Notice Board</li>
             </ul>

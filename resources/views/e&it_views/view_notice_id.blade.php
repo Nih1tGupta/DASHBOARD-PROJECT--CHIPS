@@ -170,6 +170,7 @@
                                     <h6>Attachments</h6>
                                     <p class="mt-3">
                                     <ul>
+                                    
                                         @foreach ($attachments as $attachment)
                                         <li>
                                             @php
@@ -180,6 +181,8 @@
                                             <a href="{{ url($attachment->url) }}" target="_block">{{$fileName}}</a>
                                         </li>
                                         @endforeach
+
+                                        
                                     </ul>
                                     </p>
                                 </div>
