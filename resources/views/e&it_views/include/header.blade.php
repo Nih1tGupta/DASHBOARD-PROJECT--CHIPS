@@ -22,9 +22,9 @@
                     <li><a href="#"><i class="fa fa-arrow-down"></i> Skip to Main Content</a></li>
                     <li><a href="#"><i class="fa fa-eye-slash"></i> Screen Reader Access</a></li>
                     <li><a href="#"> Text Size
-                            <span class="bg-c">A-</span>
-                            <span class="bg-c">A</span>
-                            <span class="bg-c">A+</span>
+                            <span class="bg-c btn">A-</span>
+                            <span class="bg-c btn">A</span>
+                            <span class="bg-c btn">A+</span>
                         </a></li>
 
                    
@@ -32,13 +32,13 @@
 
 
 
-                    <li>
+                    <!-- <li>
                         <a href="#">
                             <span class="bg-c bg-c1">A</span>
                             <span class="bg-c bg-c2">A</span>
                             <span class="bg-c bg-c3">A</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -90,11 +90,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="main-header-three__btn-box">
+                        <!-- <div class="main-header-three__btn-box">
                             <input type="text" name="search" placeholder="Search.." class="search">
                             <a href="contact.html" class="thm-btn main-header-three__btn"> <i class="fa fa-search"></i>
                             </a>
-                        </div>
+                        </div> -->
+                        @if (Auth::check())
+                            <div class="main-menu__btn-box">
+                                <a href="{{route('dashboard')}}" class="thm-btn main-menu__btn">Dashboard</a>
+                            </div>
+                            @else
+                            <div class="main-menu__btn-box">
+                                <a href="{{route('login')}}" class="thm-btn main-menu__btn">Log in</a>
+                            </div>
+                            @endif
                     </div>
                 </div>
             </div>

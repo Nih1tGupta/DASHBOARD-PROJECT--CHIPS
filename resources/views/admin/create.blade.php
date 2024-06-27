@@ -32,6 +32,18 @@
 
 
 @section ('content')
+<div class="page-header">
+    <div class="page-header-left d-flex align-items-center">
+        <div class="page-header-title">
+            <h5 class="m-b-10">Add Member</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Members</a></li>
+            <li class="breadcrumb-item">Add Member</li>
+        </ul>
+           
+    </div>
+</div>
 <div class="main-content">
 
 <form action="{{route('create_post')}}" method="POST">

@@ -78,7 +78,7 @@
 
 
 
-    <div class="page-wrapper">
+    <div class="page-wrapper ">
         @include('e&it_views.include.header')
 
         @yield('content')

@@ -35,7 +35,7 @@
 
 
         <div class="col-xxl-8 col-md-6 ms-auto me-auto pt-2 ">
-            <div class="card stretch-full">
+            <div class="card  stretch stretch-full">
                 <div class="card-header">
                     <h5 class="card-title">Latest Leads</h5>
                     <div class="card-header-action">
@@ -85,7 +85,7 @@
                                 <tr class="border-b">
                                     <th scope="row">Name</th>
                                     <th>E-Mail</th>
-                                    <th>On </th>
+                                    <th>Received</th>
                                     <!-- <th>Status</th> -->
                                     <th class="text-end">Messages</th>
                                 </tr>

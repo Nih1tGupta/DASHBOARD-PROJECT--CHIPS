@@ -29,6 +29,18 @@
 @endsection
 
 @section('content')
+<div class="page-header">
+    <div class="page-header-left d-flex align-items-center">
+        <div class="page-header-title">
+            <h5 class="m-b-10">Tender Details</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">Tender</li>
+            <li class="breadcrumb-item"> Tender Details</li>
+        </ul>
+           
+    </div>
+</div>
 <div class="main-content">
                 <div class="row">
                     <!--! BEGIN: [Schedule] !-->

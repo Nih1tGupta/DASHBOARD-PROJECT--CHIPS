@@ -24,12 +24,13 @@
         </div>
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ route('view_gallery') }}">View Gallery</a></li>
-            <li class="breadcrumb-item">{{ $curr_gallery->gallery_name }} created on {{ $curr_gallery->created_at }}</li>
+            <li class="breadcrumb-item">{{ $curr_gallery->gallery_name }} created on {{ $curr_gallery->created_at }}
+            </li>
         </ul>
     </div>
 </div>
 <div class="main-content">
-@if($errors->any())
+    @if($errors->any())
     <div class="col-12">
         @foreach($errors->all() as $error)
         <div class="alert alert-danger">{{$error}}</div>
@@ -42,18 +43,23 @@
     @if(session()->has('success'))
     <div class="alert alert-success">{{session('success')}}</div>
     @endif
+
     @if(auth()->user()->role == 1)
     <div class="row">
         <div class="col-xxl-10 col-md-10 ms-auto me-auto" data-select2-id="select2-data-6-ktob">
             <div class="card stretch-full" data-select2-id="select2-data-5-p6zd">
                 <div class="card-body" data-select2-id="select2-data-4-c1qo">
+                    <div class="row">
+                        <input style="display:none;" type="number" name="id" value="{{ $id }}">
                         <div class="row">
-                                    <input style="display:none;" type="number" name="id" value="{{ $id }}">
-                            <div class="row">
-                                <a href="{{ url('/admin/view_pending/accept/'.$id) }}" class="col-lg-4 col-sm-4 row ms-auto me-auto btn btn-primary" id="commentSwitch">Accept Request</a>
-                                <a href="{{ url('/admin/view_pending/reject/'.$id) }}" class="col-lg-4 col-sm-4 row ms-auto me-auto btn btn-danger" id="commentSwitch">Reject Request</a>
-                            </div>
+                            <a href="{{ url('/admin/view_pending/accept/'.$id) }}"
+                                class="col-lg-4 col-sm-4 row ms-auto me-auto btn btn-primary" id="commentSwitch">Accept
+                                Request</a>
+                            <a href="{{ url('/admin/view_pending/reject/'.$id) }}"
+                                class="col-lg-4 col-sm-4 row ms-auto me-auto btn btn-danger" id="commentSwitch">Reject
+                                Request</a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,14 +70,14 @@
         <div class="col-xxl-10 col-md-10 ms-auto me-auto" data-select2-id="select2-data-6-ktob">
             <div class="card stretch-full" data-select2-id="select2-data-5-p6zd">
                 <div class="card-body" data-select2-id="select2-data-4-c1qo">
-                    <form action="{{ url('/admin/view_gallery/'.$curr_gallery->gallery_id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('/admin/view_gallery/'.$curr_gallery->gallery_id) }}" method="POST"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-8 step-body mt-2 body current" id="project-create-steps-p-6" role="tabpanel"
                                 aria-labelledby="project-create-steps-h-6" aria-hidden="false" style="left: 0px;">
                                 <div class="">
-                                    <label for="choose-file" class="text-center"
-                                        id="choose-file-label">
+                                    <label for="choose-file" class="text-center" id="choose-file-label">
                                         Add new image</label>
                                     <input style="display:none;" type="number" name="id" value="{{ $id }}">
                                     <input name="thumbnail[]" type="file" multiple>
@@ -93,7 +99,7 @@
         @foreach($all as $photo)
         <div class="col-xxl-4 col-lg-4">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ asset($photo->photo_url); }}" alt="Card image cap">
+                <img class="card-img-top" src="{{ asset($photo->photo_url) }}" alt="Card image cap">
             </div>
         </div>
         @endforeach

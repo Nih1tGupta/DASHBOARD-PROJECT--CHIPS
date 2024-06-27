@@ -35,8 +35,8 @@
             <h5 class="m-b-10">Dashboard</h5>
         </div>
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Notice</a></li>
-            <li class="breadcrumb-item">View Notice</li>
+        <li class="breadcrumb-item">Notice</li>
+            <li class="breadcrumb-item"><a href="#">View Orders</a></li>
         </ul>
     </div>
 </div>

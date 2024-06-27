@@ -27,69 +27,68 @@
 @endsection
 @section('content')
 <form action="{{ route('detail') }}" method="POST">
-<div class="page-header">
-    <div class="page-header-left d-flex align-items-center">
-        <div class="page-header-title">
-            <h5 class="m-b-10">View Pending Requests</h5>
+    <div class="page-header">
+        <div class="page-header-left d-flex align-items-center">
+            <div class="page-header-title">
+                <h5 class="m-b-10">View Pending Requests</h5>
+            </div>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">My Posts</li>
+                <li class="breadcrumb-item">View Pending Requests</li>
+            </ul>
         </div>
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Members</a></li>
-            <li class="breadcrumb-item">View Pending Requests</li>
-        </ul>
     </div>
-</div>
-<div class="main-content">
-    @if($errors->any())
-    <div class="col-12">
-        @foreach($errors->all() as $error)
-        <div class="alert alert-danger">{{$error}}</div>
-        @endforeach
-    </div>
-    @endif
-    @if(session()->has('error'))
-    <div class="col-8 alert alert-danger ms-auto me-auto">{{session('error')}}</div>
-    @endif
-    @if(session()->has('success'))
-    <div class="alert alert-success">{{session('success')}}</div>
-    @endif
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="card stretch stretch-full">
-                <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <div id="leadList_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
-                            <div class="row dt-row" data-select2-id="select2-data-9-l8c0">
-                                <div class="col-sm-12" data-select2-id="select2-data-6-j9oc">
+    <div class="main-content">
+        @if($errors->any())
+        <div class="col-12">
+            @foreach($errors->all() as $error)
+            <div class="alert alert-danger">{{$error}}</div>
+            @endforeach
+        </div>
+        @endif
+        @if(session()->has('error'))
+        <div class="col-8 alert alert-danger ms-auto me-auto">{{session('error')}}</div>
+        @endif
+        @if(session()->has('success'))
+        <div class="alert alert-success">{{session('success')}}</div>
+        @endif
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card stretch stretch-full">
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <div id="leadList_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer">
+                                <div class="row dt-row" data-select2-id="select2-data-9-l8c0">
+                                    <div class="col-sm-12" data-select2-id="select2-data-6-j9oc">
                                         <table class="table table-hover dataTable no-footer" id="leadList"
                                             aria-describedby="leadList_info" data-select2-id="select2-data-leadList">
                                             <thead>
                                                 <tr>
                                                     <th class="sorting" tabindex="0" aria-controls="leadList"
                                                         rowspan="1" colspan="1"
-                                                        aria-label="Lead: activate to sort column ascending"
-                                                        >Gallery Name</th>
+                                                        aria-label="Lead: activate to sort column ascending">Gallery
+                                                        Name</th>
                                                     <th class="sorting" tabindex="0" aria-controls="leadList"
                                                         rowspan="1" colspan="1"
-                                                        aria-label="Lead: activate to sort column ascending"
-                                                        >User</th>
+                                                        aria-label="Lead: activate to sort column ascending">User</th>
                                                     <th class="sorting" tabindex="0" aria-controls="leadList"
                                                         rowspan="1" colspan="1"
-                                                        aria-label="Date: activate to sort column ascending"
-                                                        >Created Date</th>
+                                                        aria-label="Date: activate to sort column ascending">Created
+                                                        Date</th>
                                                     <th class="sorting" tabindex="0" aria-controls="leadList"
                                                         rowspan="1" colspan="1"
-                                                        aria-label="Date: activate to sort column ascending"
-                                                        >Updated Date</th>
+                                                        aria-label="Date: activate to sort column ascending">Updated
+                                                        Date</th>
                                                     <th class="sorting" tabindex="0" aria-controls="leadList"
                                                         rowspan="1" colspan="1"
-                                                        aria-label="Actions: activate to sort column ascending"
-                                                        >Status</th>
-                                                        
-                                                    <th class="" tabindex="0" aria-controls="leadList"
-                                                        rowspan="1" colspan="1"
-                                                        aria-label="Actions: activate to sort column ascending"
-                                                        >Preview</th>
-                                                        
+                                                        aria-label="Actions: activate to sort column ascending">Status
+                                                    </th>
+
+                                                    <th class="" tabindex="0" aria-controls="leadList" rowspan="1"
+                                                        colspan="1"
+                                                        aria-label="Actions: activate to sort column ascending">Preview
+                                                    </th>
+
                                                 </tr>
                                             </thead>
                                             <tbody data-select2-id="select2-data-5-71uf">
@@ -98,7 +97,7 @@
                                                 @if($gallery->user_id == auth()->user()->id)
                                                 <tr class="single-item odd" data-select2-id="select2-data-4-8ka4">
                                                     <td>
-                                                        <a href="#" class="hstack gap-3">
+                                                       
                                                             <!-- <div class="avatar-image avatar-md bg-primary text-white">
                                                                     E
                                                                 </div> -->
@@ -106,15 +105,16 @@
                                                                 <span
                                                                     class="text-truncate-1-line">{{ $gallery->gallery_name }}</span>
                                                             </div>
-                                                        </a>
+                                                     
                                                     </td>
                                                     <td>
-                                                        <a href="{{ url('/admin/edit_member/'.$gallery->user_id) }}" class="hstack gap-3">
+                                                        <a href="{{ url('/admin/edit_member/'.$gallery->user_id) }}"
+                                                            class="hstack gap-3">
                                                             <div>
                                                                 <span class="text-truncate-1-line">
                                                                     @foreach($members as $member)
                                                                     @if($member->id == $gallery->user_id)
-                                                                        {{ $member->name }}
+                                                                    {{ $member->name }}
                                                                     @endif
                                                                     @endforeach
                                                                 </span>
@@ -125,31 +125,36 @@
                                                     <td>{{ $gallery->created_at }}</td>
                                                     <td>{{ $gallery->updated_at }}</td>
                                                     @if($gallery->status == 0)
-                                                    <td><span class="badge bg-soft-warning text-warning">Pending</span></td>
+                                                    <td><span class="badge bg-soft-warning text-warning">Pending</span>
+                                                    </td>
                                                     @endif
                                                     @if($gallery->status == 1)
-                                                    <td><span class="badge bg-soft-success text-success">Accepted</span></td>
+                                                    <td><span class="badge bg-soft-success text-success">Accepted</span>
+                                                    </td>
                                                     @endif
                                                     @if($gallery->status == 2)
-                                                    <td><span class="badge bg-soft-danger text-danger">Rejected</span></td>
+                                                    <td><span class="badge bg-soft-danger text-danger">Rejected</span>
+                                                    </td>
                                                     @endif
                                                     @if($gallery->status == 1)
                                                     <td>
-                                                        <a href="{{ url('/admin/view_gallery/'.$gallery->gallery_id) }}" class="btn btn-primary">
+                                                        <a href="{{ url('/admin/view_gallery/'.$gallery->gallery_id) }}"
+                                                            class="btn btn-primary">
                                                             <!-- <i class="feather-edit me-2"></i> -->
                                                             <span>View</span>
                                                         </a>
                                                     </td>
                                                     @else
                                                     <td>
-                                                        <a href="{{ url('/admin/view_pending/'.$gallery->gallery_id) }}" class="btn btn-primary">
+                                                        <a href="{{ url('/admin/view_pending/'.$gallery->gallery_id) }}"
+                                                            class="btn btn-primary">
                                                             <!-- <i class="feather-edit me-2"></i> -->
                                                             <span>View</span>
                                                         </a>
                                                     </td>
                                                     @endif
-                                                    
-                                                    
+
+
                                                 </tr>
                                                 @endif
                                                 @endforeach
@@ -157,16 +162,16 @@
 
                                             </tbody>
                                         </table>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 
 </div>
 @endsection

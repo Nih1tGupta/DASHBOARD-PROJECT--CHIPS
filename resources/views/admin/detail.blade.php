@@ -1,27 +1,4 @@
-<!-- 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">E-mail</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Role</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach($details as $detail)
-    <tr>
-      <th>{{$detail->id}}</th>
-      <td>{{$detail->name}}</td>
-      <td>{{$detail->email}}</td>
-      <td>{{$detail->mobile}}</td>
-      <td>{{$detail->role}}</td>
-    </tr>
-   
-   @endforeach
-  </tbody>
-</table> -->
+
 @extends('admin.layout')
 @section('css')
 <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.ico');}}" />
@@ -52,9 +29,18 @@
 @endsection
 
 @section('content')
-<center>
-    <h1>MEMBERS</h1>
-</center>
+<div class="page-header">
+    <div class="page-header-left d-flex align-items-center">
+        <div class="page-header-title">
+            <h5 class="m-b-10">View Members</h5>
+        </div>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Members</a></li>
+            <li class="breadcrumb-item">View Members</li>
+        </ul>
+           
+    </div>
+</div>
 <div class="main-content" data-select2-id="select2-data-37-p1dw">
     <div class="row" data-select2-id="select2-data-36-pmv8">
         <div class="col-lg-12" data-select2-id="select2-data-35-puim">

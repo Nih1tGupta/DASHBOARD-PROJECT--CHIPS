@@ -31,7 +31,7 @@ class GalleryContainer extends Controller
     }
     
     function view_gallery_id_post( Request $request)
-    {
+{
         
             $request->validate([
                 'id' => 'required',
@@ -264,7 +264,7 @@ DB::table('photos_main')->insert([
 ]);
 
     }
-
+$start++;
 
 
 return redirect(route('photos2',$request->id))->with ('success','Photo Added Successfully');

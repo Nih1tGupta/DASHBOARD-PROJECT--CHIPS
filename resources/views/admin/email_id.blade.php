@@ -44,11 +44,14 @@
                     <div class="text-align-left">
                         <div class="">
 
-                            <h5 class="card-title " style="text-align:center;">Name: {{ $detail->name }}</h5>
+                            <h4 class="card-title " style="text-align:left;">Sender's Name: <h6>{{ $detail->name }}</h6>
+                            </h4>
 
 
-                            <h5 class="card-title" style="text-align:center;">E-Mail: {{ $detail->email }}
-                            </h5>
+                            <h4 class="card-title" style="text-align:left;">Sender's E-Mail: 
+                            <h6>{{ $detail->email }}
+                            </h6>
+                            </h4>
 
 
                         </div>
@@ -58,7 +61,7 @@
                     <h5 class="card-title" style="text-align:center;">Message</h5>
                 </div>
                 <div class="card-body">
-                  
+
                     <div class="d-flex align-items-center mb-3">
                         <div class="avatar-text bg-gray-100">
                             <i class="feather feather-paperclip"></i>
@@ -67,7 +70,7 @@
 
                         <h5 class="card-title" style="text-align:center;">Message: {{ $detail->message }}</h5>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

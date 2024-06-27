@@ -98,7 +98,7 @@
     @if($photo->gallery_id == $id)
     <div class="col-xxl-4 col-lg-4">
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{ asset($photo->photo_url); }}" alt="Card image cap">
+            <img class="card-img-top" src="{{ asset($photo->photo_url) }}" alt="Card image cap">
         </div>
     </div>
     @endif

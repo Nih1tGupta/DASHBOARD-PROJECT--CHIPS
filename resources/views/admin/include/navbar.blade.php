@@ -32,14 +32,15 @@
                         <li class="nxl-item"><a class="nxl-link" href="{{route('form1')}}">1</a></li>
                         <li class="nxl-item"><a class="nxl-link" href="{{route('form2')}}">2</a></li>
                         <!-- <li class="nxl-item"><a class="nxl-link" href="reports-project.html">Project Report</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="reports-timesheets.html">Timesheets Report</a></li> -->
+                            <li class="nxl-item"><a cnotifilass="nxl-link" href="reports-timesheets.html">Timesheets Report</a></li> -->
                     </ul>
                 </li>
 
                 <li class="nxl-item nxl-hasmenu">
                     <a href="javascript:void(0);" class="nxl-link">
                         <span class="nxl-micon"><i class="feather-layout"></i></span>
-                        <span class="nxl-mtext">Notice</span></span>
+                        <span class="nxl-mtext">Notice</span><span class="nxl-arrow"><i
+                        class="feather-chevron-right"></i></span>
                     </a>
                     <ul class="nxl-submenu">
                         <li class="nxl-item"><a class="nxl-link" href="{{route('add_notice')}}">Add Notice</a></li>
@@ -125,7 +126,7 @@
                 </li>
                 <li class="nxl-item nxl-hasmenu">
                     <a href="{{route('notify')}}" class="nxl-link">
-                        <span class="nxl-micon"><i class="bi bi-journal-text"></i></span>
+                        <span class="nxl-micon"><i class="fa-regular fa-bell"></i></span>
                         <span class="nxl-mtext">Notifications</span>
                     </a>
 

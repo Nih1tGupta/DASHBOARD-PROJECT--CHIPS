@@ -1930,7 +1930,7 @@
                                 <i class="feather-dollar-sign"></i>
                                 <span>Billing Details</span>
                             </a> -->
-                            <a href="javascript:void(0);" class="dropdown-item">
+                            <a href="{{route('notify')}}" class="dropdown-item">
                                 <i class="feather-bell"></i>
                                 <span>Notifications</span>
                             </a>

@@ -33,7 +33,7 @@
             <h5 class="m-b-10">View Pending Requests</h5>
         </div>
         <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Members</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Gallery</a></li>
             <li class="breadcrumb-item">View Pending Requests</li>
         </ul>
     </div>
