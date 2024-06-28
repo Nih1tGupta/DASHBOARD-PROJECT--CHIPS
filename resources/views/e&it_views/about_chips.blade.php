@@ -19,7 +19,7 @@
 </section>
 
 
-<section class="feature-four">
+<section class="feature-four" id="wrapper">
     <div class="container">
         <div class="row">
             <!--Feature Four Single Start-->

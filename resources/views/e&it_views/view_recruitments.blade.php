@@ -138,7 +138,7 @@
     </div>
 </section>
 
-<section class="department-details">
+<section class="department-details" id="wrapper">
     <div class="container">
         <div class="row">
             <div class="col-xl-8 col-lg-7">

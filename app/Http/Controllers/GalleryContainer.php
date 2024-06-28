@@ -584,6 +584,8 @@ public function added_notice(Request $request){
 
     public function view_home()
     {
+        $total_news = DB::table('notice')->where('type', 1)->orderBy('id', 'desc')->limit(3)->get();
+        $data['total_news'] = $total_news;
         $notices = DB::table('notice')->orderBy('id', 'desc')->limit(3)->get();
         $data['notices'] = $notices;
         $total_tenders = DB::table('notice')->where('type', 2)->orderBy('id', 'desc')->limit(3)->get();

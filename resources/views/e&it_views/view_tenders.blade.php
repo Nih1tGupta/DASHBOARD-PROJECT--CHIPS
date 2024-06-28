@@ -17,7 +17,7 @@
     </div>
 </section>
 
-<section class="update-one">
+<section class="update-one" id="wrapper">
     <div class="container">
         <div class="row">
             <div class="col-xl-2 col-lg-2">

@@ -78,11 +78,11 @@
 
 
 
-    <div class="page-wrapper ">
+    <div class="page-wrapper " id="wrapper">
         @include('e&it_views.include.header')
 
         @yield('content')
-        <section class="brand-one brand-two">
+        <section class="brand-one brand-two" id="wrapper">
             <div class="container">
                 <div class="brand-one__carousel thm-owl__carousel owl-theme owl-carousel owl-loaded owl-drag"
                     data-owl-options="{
@@ -253,7 +253,7 @@
 
         @include('e&it_views.include.footer')
     </div>
-    <div class="mobile-nav__wrapper">
+    <div class="mobile-nav__wrapper " id="wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
@@ -395,6 +395,16 @@ document.getElementById('ct').innerHTML = x;
 display_c();
  }
 </script>
+
+<script>
+    let cont = document.getElementById("wrapper");
+    let nav = document.getElementById("navbar");
+    function goHome(size) {
+      
+        cont.style.fontSize = size;
+        nav.style.fontSize = size;
+    }
+    </script>
     <script src="{{ asset('eit_assets/vendors/jquery/jquery-3.6.0.min.js'); }}"></script>
     <script src="{{ asset('eit_assets/vendors/bootstrap/js/bootstrap.bundle.min.js'); }}"></script>
     <script src="{{ asset('eit_assets/vendors/jarallax/jarallax.min.js'); }}"></script>

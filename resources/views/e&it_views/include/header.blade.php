@@ -19,12 +19,12 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <ul class="list-unstyled main-menu__top-menu">
-                    <li><a href="#"><i class="fa fa-arrow-down"></i> Skip to Main Content</a></li>
+                    <li><a href="{{route('view_home')}}">Skip to Main Content</a></li>
                     <li><a href="#"><i class="fa fa-eye-slash"></i> Screen Reader Access</a></li>
                     <li><a href="#"> Text Size
-                            <span class="bg-c btn">A-</span>
-                            <span class="bg-c btn">A</span>
-                            <span class="bg-c btn">A+</span>
+                    <button href="#" onclick="goHome('13px')">A-</button>
+                    <button href="#" onclick="goHome('16px')">A</button>
+                    <button href="#" onclick="goHome('22px')">A+</button>
                         </a></li>
 
                    
@@ -110,7 +110,7 @@
         </div>
     </div>
     <nav class="main-menu main-menu-three">
-        <div class="main-menu-three__wrapper">
+        <div class="main-menu-three__wrapper ">
             <div class="container">
                 <div class="main-menu-three__wrapper-inner">
                     <div class="main-menu-three__main-menu-box">
@@ -237,7 +237,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="main-menu-three__social">
+                    <div class="main-menu-three__social " id="wrapper">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-pinterest-p"></i></a>
